@@ -185,6 +185,9 @@ a[href="tel:+380961111111"]
 }
 /* =====================================portfolio.html===================================== */
 /* photo filter */
+.portfolio-title {
+    display: none;
+}
 .filter-batton {
     font-family: Roboto, sans-serif;
     font-weight: 500;
