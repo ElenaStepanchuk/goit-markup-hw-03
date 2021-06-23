@@ -149,6 +149,9 @@ a[href="tel:+380961111111"]
     padding-top: 94px;
     padding-bottom: 157px;
 }
+.about-us-list {
+    display: flex;
+} 
 .about-us-title {
     color:var(--title-color);
     font-family: Roboto, sans-serif;
@@ -158,12 +161,16 @@ a[href="tel:+380961111111"]
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    background-color: violet;
 }
 .about-us p {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    background-color: var(--accent-color);
 }
 /* our occupation */
 .our-occupation-title {
