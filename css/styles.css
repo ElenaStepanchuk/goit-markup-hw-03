@@ -12,6 +12,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+   
 }
 .list {
     list-style: none;
@@ -20,6 +23,14 @@ body {
 .link {
     text-decoration: none;
     outline: 2px solid tomato;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.section {
+   
 }
 /* Сброс отступов между элементами */
 h1,
@@ -40,6 +51,10 @@ ol {
     padding-left: 0;
 }
 /* =======================header======================= */
+.header-container {
+    display: flex;
+    align-items: center;
+}
 /* log */
 .log-web {
     color:var(--accent-color);
@@ -66,7 +81,7 @@ ol {
 display: flex;
 padding-top: 32px;
 padding-bottom: 32px;
-}
+} 
 
 .header-nav .list:not(:last-child) {
     margin-right: 50px;
@@ -86,6 +101,7 @@ padding-bottom: 32px;
 /* header-adress */
 .header-adress {
     display: flex;
+    align-items: center;
 }
 .header-adress .list:not(:last-child) {
     margin-right: 50px;
@@ -106,10 +122,7 @@ a[href="tel:+380961111111"]
 {
     color:var(--accent-color);
 }
-.header {
-    display: flex;
-    align-items: center;
-}
+
 /* =======================hero======================= */
 .hero {
     background-color: #2F303A;
@@ -188,10 +201,10 @@ outline: 1px solid blue;
     background-color: var(--accent-color);
 }
 /* our occupation */
-.our-occupation-title {
-    
+.our-occupation {
+    background-color: brown;
 }
-.our-occupation h2{
+.our-occupation-title{
     color:var(--title-color);
     font-family: Roboto, sans-serif;
     font-weight: 700;
@@ -199,16 +212,26 @@ outline: 1px solid blue;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.our-ocupation-list {
+    display: flex;
+    margin-right: -30px;
+    margin-left: -30px;
+}
+.our-ocupation-list .list {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 31px;
+    flex-basis: calc((100% - 90px) / 3);
 }
 /* our team */
 .our-team {
-    padding-top: 125px;
-    padding-bottom: 94px;
+    padding: 94px 15px;
+    background-color: chartreuse;
 }
 .our-team-title {
     margin-bottom: 50px;
-}
-.our-team h2{
     color:var(--title-color); 
     font-family: Roboto, sans-serif;
     font-weight: 700;
@@ -224,7 +247,9 @@ outline: 1px solid blue;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;  
+    letter-spacing: 0.03em;
+    margin-top: 30px;  
+    
 }
 .our-team p {
     font-family: Roboto, sans-serif;
@@ -232,7 +257,18 @@ outline: 1px solid blue;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 10px;
 }
+.our-team-list {
+    display: flex;
+    align-items: center;
+}
+.our-team-list .list:not(:last-child) {
+    padding-right: 30px;
+} 
+/* .our-team-list .list {
+    flex-basis: calc ((100% - 120px) / 4);
+} */
 /* =======================footer======================= */
 .footer {
     background-color: #2F303A;
