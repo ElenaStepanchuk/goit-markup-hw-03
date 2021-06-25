@@ -262,13 +262,15 @@ outline: 1px solid blue;
 .our-team-list {
     display: flex;
     align-items: center;
+   
+   
+    margin-right: -30px;
+    flex-wrap: wrap;
 }
 .our-team-list .list:not(:last-child) {
     padding-right: 30px;
-} 
-/* .our-team-list .list {
     flex-basis: calc ((100% - 120px) / 4);
-} */
+}
 /* =======================footer======================= */
 .footer {
     background-color: #2F303A;
@@ -284,6 +286,7 @@ outline: 1px solid blue;
     letter-spacing: 0.03em;
 }
 .adress-phisical {
+    display: block;
     color: #FFFFFF;
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -291,6 +294,7 @@ outline: 1px solid blue;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-top: 10px;
 }
 .adress-phisical:hover,
 .adress-phisical:focus {
@@ -298,6 +302,7 @@ outline: 1px solid blue;
 }
 .adress-mail,
 .adress-tel {
+    display: block;
     color: rgba(255, 255, 255, 0.6);
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -305,6 +310,7 @@ outline: 1px solid blue;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-top: 9px;
 }
 .adress-mail:hover,
 .adress-mail:focus {
