@@ -54,6 +54,7 @@ ol {
 .header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 /* log */
 .log-web {
@@ -68,6 +69,7 @@ ol {
 .log-studio {
     color: #000000;    
 }
+
 /* nav */
 .nav {
     display: flex;
@@ -322,6 +324,13 @@ outline: 1px solid blue;
 }
 /* =====================================portfolio.html===================================== */
 /* photo filter */
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+
+}
 .portfolio-title {
     display: none;
 }
@@ -331,14 +340,34 @@ outline: 1px solid blue;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
+    border-radius: 4px;
     letter-spacing: 0.03em;
     cursor: pointer;
+    background-color: #F5F4FA;
+    padding: 6px 22px;
+}
+.portfolio-list :not(:first-child) {
+    margin-left: 8px;
 }
 .filter-batton:hover,
 .filter-batton:focus {
     background-color:var(--accent-color)
 }
 /* fhoto list */
+.photo-list {
+    background-color: burlywood;
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-top: -30px;
+}
+ .photo-list .list {
+    margin-top: 30px;
+    margin-right: 30px; 
+    flex-basis: calc((100% - 90px) / 3);
+ }   
+  
 .photo-list h2 {
     color:var(--title-color);
     font-family: Roboto, sans-serif;
@@ -356,3 +385,4 @@ outline: 1px solid blue;
     letter-spacing: 0.03em;
     color: #757575;
 }
+
