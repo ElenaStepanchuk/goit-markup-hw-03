@@ -18,11 +18,10 @@ body {
 }
 .list {
     list-style: none;
-    outline: 2px solid tomato;
 }
 .link {
     text-decoration: none;
-    outline: 2px solid tomato;
+    
 }
 img {
     display: block;
@@ -30,6 +29,8 @@ img {
     height: auto;
 }
 .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
    
 }
 /* Сброс отступов между элементами */
@@ -42,7 +43,7 @@ h6,
 p {
     margin-top: 0;
     margin-bottom: 0;
-    outline: 2px solid tomato;
+    
 }
 ul,
 ol {
@@ -164,9 +165,6 @@ a[href="tel:+380961111111"]
 
 /* adout us */
 .about-us-list {
-background-color: yellow;
-outline: 1px solid blue;
-
    display: flex; 
    flex-wrap: wrap;
      
@@ -190,7 +188,6 @@ outline: 1px solid blue;
     
 
     margin-top: 94px;
-    background-color: violet;
 }
 .about-us p {
     font-family: Roboto, sans-serif;
@@ -200,11 +197,11 @@ outline: 1px solid blue;
     margin-top: 10px;
     margin-bottom: 157px;
 
-    background-color: var(--accent-color);
+    
 }
 /* our occupation */
 .our-occupation {
-    background-color: brown;
+    
 }
 .our-occupation-title{
     color:var(--title-color);
@@ -228,10 +225,7 @@ outline: 1px solid blue;
     flex-basis: calc((100% - 90px) / 3);
 }
 /* our team */
-.our-team {
-    padding: 94px 15px;
-    background-color: chartreuse;
-}
+
 .our-team-title {
     margin-bottom: 50px;
     color:var(--title-color); 
@@ -324,10 +318,10 @@ outline: 1px solid blue;
 }
 /* =====================================portfolio.html===================================== */
 /* photo filter */
+
 .portfolio-list {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
     padding-bottom: 50px;
 
 }
@@ -345,6 +339,7 @@ outline: 1px solid blue;
     cursor: pointer;
     background-color: #F5F4FA;
     padding: 6px 22px;
+    border:none;
 }
 .portfolio-list :not(:first-child) {
     margin-left: 8px;
@@ -355,7 +350,7 @@ outline: 1px solid blue;
 }
 /* fhoto list */
 .photo-list {
-    background-color: burlywood;
+    /* background-color: burlywood; */
     
     display: flex;
     flex-wrap: wrap;
@@ -367,7 +362,9 @@ outline: 1px solid blue;
     margin-right: 30px; 
     flex-basis: calc((100% - 90px) / 3);
  }   
-  
+ .photo-list .list:nth-child(3n) {
+    margin-right: 0;
+ }
 .photo-list h2 {
     color:var(--title-color);
     font-family: Roboto, sans-serif;
@@ -375,6 +372,9 @@ outline: 1px solid blue;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 .photo-list p {
 
@@ -384,5 +384,12 @@ outline: 1px solid blue;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-top: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.photo-list-description {
+    border: 1px solid #ECECEC;
+  
 }
 
